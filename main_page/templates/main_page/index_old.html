@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
+{% block content %}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +9,15 @@
 </head>
 
 <body>
-    <h1>Books list</h1>
+    <h1>Posts list</h1>
     {% for post in object_list %}
     <h2>{{post.title}}</h2>
+    <p>{{post.bookid}}</p>
     <p>Author: {{post.author}}</p>
-    <p>ISBN : {{post.bookid}}</p>
     {% endfor %}
 </body>
 
 </html>
+
+<!-- index.html content ends here -->
+{% endblock %}

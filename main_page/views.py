@@ -10,3 +10,5 @@ from .models import booklist
 
 class PostList(generic.ListView):
     model = booklist
+    template_name = "blog/index.html"
+    paginate_by = 6
