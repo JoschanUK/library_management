@@ -34,6 +34,14 @@ body {
     position: relative;
 }
 
+.image-flash {
+    position: absolute;
+    bottom: 5%;
+    min-width: 30%;
+    left: -2px;
+    background-color: #188181;
+}
+
 .scale {
     width: 100%;
     height: auto;
@@ -86,7 +94,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: red;
+    color: #E84610;
 }
 
 .post-title {
